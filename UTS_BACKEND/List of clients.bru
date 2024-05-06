@@ -1,0 +1,23 @@
+meta {
+  name: List of clients
+  type: http
+  seq: 5
+}
+
+get {
+  url: http://localhost:5000/api/clients
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMTAwQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYxNjg4MGM3MTlhMzVhOTkxMTc2NmI5IiwiaWF0IjoxNzE0OTIyNDgxLCJleHAiOjE3MTUwMDg4ODF9.Tmw3aaCvPL0i9EjPg_LMbC6LLsJk9T74gHWd-zNjHnQ
+}
+
+body:json {
+  {
+    "name":"Julius Juan",
+    "email": "julius.535230078@gmail.com",
+    ""
+  }
+}

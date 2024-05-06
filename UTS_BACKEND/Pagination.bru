@@ -1,0 +1,22 @@
+meta {
+  name: Pagination
+  type: http
+  seq: 3
+}
+
+get {
+  url: http://localhost:5000/api/users?page_number=1&page_size=10&search=email:admin&sort=email:desc
+  body: json
+  auth: none
+}
+
+query {
+  page_number: 1
+  page_size: 10
+  search: email:admin
+  sort: email:desc
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMTAwQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYxNjg4MGM3MTlhMzVhOTkxMTc2NmI5IiwiaWF0IjoxNzE0OTE0MDE0LCJleHAiOjE3MTUwMDA0MTR9.2LAoJgaefp7gbG4g5IcwDCLldM6CZJzQlhuXC5MwboI
+}

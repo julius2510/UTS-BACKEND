@@ -1,0 +1,25 @@
+meta {
+  name: Clients
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:5000/api/clients
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluMTAwQGV4YW1wbGUuY29tIiwidXNlcklkIjoiNjYxNjg4MGM3MTlhMzVhOTkxMTc2NmI5IiwiaWF0IjoxNzE0OTI3ODEwLCJleHAiOjE3MTUwMTQyMTB9.zXUMRj9IxRYSA0GIB_fuVPrFKFE7gbZG6TJ2ZRcZYTM
+}
+
+body:json {
+  {
+    "name":"juliusjuan",
+    "email": "juliusjuan@gmail.com",
+    "accCode": "backend",
+    "pinNumber": "33333",
+    "ammount": "6011111"
+  }
+}
